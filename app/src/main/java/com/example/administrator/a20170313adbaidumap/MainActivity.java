@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     private void initBDMap() {
         mMapView = (TextureMapView) findViewById(R.id.bmapView);
         mBaiduMap= mMapView.getMap();
-      //  mBaiduMap.setMapType(BaiduMap.MAP_TYPE_NORMAL);
+       mBaiduMap.setMapType(BaiduMap.MAP_TYPE_NORMAL);
         // 开启定位图层
         mBaiduMap.setMyLocationEnabled(true);
     }
