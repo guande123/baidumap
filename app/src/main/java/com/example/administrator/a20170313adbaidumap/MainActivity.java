@@ -14,8 +14,11 @@ import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 import com.baidu.mapapi.SDKInitializer;
 import com.baidu.mapapi.map.BaiduMap;
+import com.baidu.mapapi.map.BitmapDescriptor;
+import com.baidu.mapapi.map.BitmapDescriptorFactory;
 import com.baidu.mapapi.map.MapStatusUpdate;
 import com.baidu.mapapi.map.MapStatusUpdateFactory;
+import com.baidu.mapapi.map.MyLocationConfiguration;
 import com.baidu.mapapi.map.MyLocationData;
 import com.baidu.mapapi.map.TextureMapView;
 import com.baidu.mapapi.model.LatLng;
@@ -147,12 +150,12 @@ public class MainActivity extends AppCompatActivity {
                   //  .direction(100)
                   .latitude(lat)
                   .longitude(lng).build();
-       /*   // 设置定位图层的配置（定位模式，是否允许方向信息，用户自定义定位图标）
+         // 设置定位图层的配置（定位模式，是否允许方向信息，用户自定义定位图标）
           BitmapDescriptor mCurrentMarker = BitmapDescriptorFactory
                   .fromResource(R.drawable.l_icon);
           MyLocationConfiguration config = new MyLocationConfiguration(MyLocationConfiguration.LocationMode.NORMAL, true, mCurrentMarker);
           mBaiduMap.setMyLocationConfigeration(config);
-// 设置定位数据*/
+// 设置定位数据
           mBaiduMap.setMyLocationData(locData);
       }
 
